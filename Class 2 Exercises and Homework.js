@@ -61,8 +61,18 @@ console.log(mytwoDimArray[2]);
 // Note: Regex expressions always start and end with a forward slash '/', if this is omitted, then the JavaScript RegExp.prototype(test) will NOT work! 
 // Note 2: Used \w instead of [a-zA-Z] because it is possible that email addresses contain numbers and underscores. Also had to escape the "." character with a backslash in order to include it in the regex. 
 
-// My regex expression: /\w+@\w+\.\w+/
+console.log('\n'); // To separate Question 6 from Question 5
 
+// My regex expression: /\w+@\w+\.\w+/
+const testStr = 'hello2@yahoo.com';
+const testStr2 = '777';
+const regex2 = /\w+@\w+\.\w+/; 
+
+result1 = regex2.test(testStr);
+result2 = regex2.test(testStr2);
+
+console.log(result1);
+console.log(result2); 
 
 // 7. You are given an assignmentDate as a string in the format "month/day/year"
 // i.e. '1/21/2019' - but this could be any date.
